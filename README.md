@@ -17,6 +17,7 @@
 ![](images/del1.png)
 
 ![](images/del2.png)
+
 -------------------------------------------
            Detailed Description:
 -------------------------------------------
@@ -57,8 +58,9 @@ bootstrap(ToDoList);
 
 This simply informs Angular that this component is the application root.
 
+#------------------------------
 Web components
-...............................
+#...............................
 
 Binding 
 
