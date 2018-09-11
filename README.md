@@ -5,6 +5,7 @@
 - Clone or download the repo
 - Run `npm install`
 - Run `gulp serve`
+#-------------
 
 ![](images/command.png)
 
