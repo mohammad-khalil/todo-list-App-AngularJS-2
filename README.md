@@ -21,12 +21,13 @@
 -------------------------------------------
            Detailed Description:
 -------------------------------------------
+-------------------
 #Introduction
-
+-------------------
 This application aims to build a simple todo-list application with Angular 2.0 and type script. Along the way we’ll look at web components, dependency injection, TypeScript, bindings and the Angular 2.0 change detection strategy which combine to make a much more elegant framework to its predecessor.
-
+-------------------
 #Starter Project
-
+-------------------
 As a starting point for the project I used an Angular 2 seed project, which puts in place a simple gulp build that performs the required TypeScript compilation and has live-reloading. I added the basic skeleton of the todo application to this seed, which can be seen in this commit. Running gulp serve shows the following:
 
 ![](images/initial.png)
@@ -62,8 +63,9 @@ This simply informs Angular that this component is the application root.
 Web components
 ------------------------------
 
+-------------------
 Binding 
-
+-------------------
 1.Simple binding
 Angular 2.0 bindings are quite simple, just add a property to your class:
 
@@ -109,7 +111,9 @@ newItemChanged(event: KeyboardEvent): void {
 
 The $event variable is available as part of the template expression context and contains the object that describes the DOM event. The variable contains a reference to the element which fired the event, allowing access to the updated value. As a result, when the ‘Add’ button is clicked it now reports the correct text.
 
+-------------------
 Local template variables
+-------------------
 
 Rather than access the DOM element indirectly via an event, it is possible to obtain a more direct reference to it via a template variable. Updating the template as follows:
 
@@ -138,7 +142,9 @@ The following snippet shows how the addItem component method can be invoked when
 <input class="new-todo"  [(ngModel)]="newItem" (keyup.enter)="addItem()">
 <button class="add" (click)="addItem()">Add</button>
 
+-------------------
 Adding a store
+-------------------
 
 Rather than adding a service, I’m going to borrow the store concept from the Flux pattern. Stores contain application state and perform logic based on actions that are dispatched from the view. I’ll not be adding actions or a dispatcher to this application, but will keep the logic and state within the store.
 
@@ -181,7 +187,9 @@ These can then be rendered via the ngFor directive as follows:
 
 ![](images/todo-list.png)
 
+-------------------
 Dependency Injection
+-------------------
 
 Constructing an instance of the store directly within the component isn’t ideal, it is likely that we would want the store to be a singleton. This was one of the important features of Angular 1.x services. Angular 2.0 has a solution to this problem in the form of dependency injection.
 
@@ -207,7 +215,9 @@ import {TodoStore} from './store/todoStore';
 
 bootstrap(ToDoList, [TodoStore]);
 
+-------------------
 Adding items
+-------------------
 
 Now that we have a store we can actually start adding todo items to it. Removing the fake data and including a method for adding new items results in the following:
 
@@ -269,7 +279,9 @@ The component can be used as follows (after adding it to the directives property
 
 As a result of adding the Input decorator to the component’s item property it can now be bound to.
 
+-------------------
 Adding a delete button
+-------------------
 
 The current example shows how to pass data into a component instance, via a property binding, but how do you propagate changes in the other direction? If you consider the component to be just like any other DOM element, then it should expose events in order to indicate changes in state.
 
@@ -336,7 +348,9 @@ With the above logic in place, and a few items added to the todo list, you see a
 
 ![](images/logging.png)
 
+-------------------
 Immutability
+-------------------
 
 With Angular 2 each component has its own change detector, which allows you to choose from a number of change detection strategies on a per-component basis (in much the same way that individual components can choose their own encapsulation mode). One of the most interesting change detection strategies relates to immutability.
 
