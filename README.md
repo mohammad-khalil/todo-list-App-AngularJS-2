@@ -1,19 +1,26 @@
+#An Angular 2.0 todo list application
 
-![](images/command.png)
+##Getting Started
+
+- Clone or download the repo
+- Run `npm install`
+- Run `gulp serve`
+
+![](images/comm.png)
 
 1.adding tasks:
 
-![](images/add.png)
+![](images/ad.png)
 
 2.done tasks.
 
-![](images/done.png)
+![](images/don.png)
 
 3.delete task.
 
-![](images/del1.png)
+![](images/dele1.png)
 
-![](images/del2.png)
+![](images/dele2.png)
 
 -------------------------------------------
            Detailed Description:
