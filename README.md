@@ -6,21 +6,21 @@
 - Run `npm install`
 - Run `gulp serve`
 
-![](images/comm.png)
+![](images/command.png)
 
 1.adding tasks:
 
-![](images/ad.png)
+![](images/add.png)
 
 2.done tasks.
 
-![](images/don.png)
+![](images/done.png)
 
 3.delete task.
 
-![](images/dele1.png)
+![](images/del1.png)
 
-![](images/dele2.png)
+![](images/del2.png)
 
 -------------------------------------------
            Detailed Description:
