@@ -1,11 +1,3 @@
-#An Angular 2.0 todo list application
-
-##Getting Started
-
-- Clone or download the repo
-- Run `npm install`
-- Run `gulp serve`
-#-------------
 
 ![](images/command.png)
 
