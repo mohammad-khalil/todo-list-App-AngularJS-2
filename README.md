@@ -7,13 +7,17 @@
 - Run `gulp serve`
 
 ![](images/command.png)
+
 1.adding tasks:
+
 ![](images/add.png)
 
 2.done tasks.
+
 ![](images/done.png)
 
 3.delete task.
+
 ![](images/del1.png)
 
 ![](images/del2.png)
