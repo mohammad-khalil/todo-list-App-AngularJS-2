@@ -58,9 +58,9 @@ bootstrap(ToDoList);
 
 This simply informs Angular that this component is the application root.
 
-#------------------------------
+------------------------------
 Web components
-#...............................
+------------------------------
 
 Binding 
 
